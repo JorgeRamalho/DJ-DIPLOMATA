@@ -1,0 +1,18 @@
+{
+  "name": "DJ Diplomata",
+  "short_name": "Diplomata",
+  "description": "Diplomata é o som de qualidade, massivo e presente. Progressive, Trance e PsyTrance em Curitiba.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

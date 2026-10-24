@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Logo DJ Diplomata">
+  <circle cx="40" cy="40" r="36.4" fill="none" stroke="#c6a15a" stroke-width="1.5"/>
+  <circle cx="40" cy="40" r="31" fill="none" stroke="#5ce1ff" stroke-width="0.55" opacity="0.8"/>
+  <path d="M13 40 H19 L22 33 L25 47 L28 29 L31 51 L34 23 L37 55 L40 15 L43 55 L46 23 L49 51 L52 29 L55 47 L58 33 L61 40 H67" fill="none" stroke="#5ce1ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

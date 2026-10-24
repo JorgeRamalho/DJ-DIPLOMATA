@@ -1,0 +1,43 @@
+# Publicação estática — raiz do repositório = publish directory
+[build]
+  publish = "."
+
+# Meta/SEO na pasta meta/, servidos na raiz do domínio
+[[redirects]]
+  from = "/robots.txt"
+  to = "/meta/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/meta/sitemap.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/site.webmanifest"
+  to = "/meta/site.webmanifest"
+  status = 200
+  force = true
+
+# URLs antigas (raiz) → páginas internas
+[[redirects]]
+  from = "/lp.html"
+  to = "/paginas/lp.html"
+  status = 301
+
+[[redirects]]
+  from = "/imprensa.html"
+  to = "/paginas/imprensa.html"
+  status = 301
+
+[[redirects]]
+  from = "/privacidade.html"
+  to = "/paginas/privacidade.html"
+  status = 301
+
+[[redirects]]
+  from = "/campanhas.html"
+  to = "/paginas/campanhas.html"
+  status = 301
