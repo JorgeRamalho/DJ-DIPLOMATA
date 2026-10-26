@@ -43,7 +43,8 @@
     border: 0;
   }
 
-  img {
+  img,
+  video {
     max-width: 100%;
     height: auto;
     display: block;
@@ -830,6 +831,30 @@
     gap: 0.55rem 1.15rem;
   }
 
+  .clip-frame {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 2rem;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid var(--line);
+  }
+
+  .clip-frame video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .clip-frame video::-webkit-media-controls,
+  .clip-frame video::-webkit-media-controls-enclosure,
+  .clip-frame video::-webkit-media-controls-panel {
+    display: none !important;
+  }
+
   .release {
     display: grid;
     gap: 1rem;
@@ -984,6 +1009,13 @@
   .js [data-reveal].is-in,
   .city-band { animation: none; }
   .nav-toggle__bar { transition: none; }
+}
+
+/* Unlayered so HTML width/height on <video> cannot blow the clip past the wrap. */
+.clip-frame video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @media print {

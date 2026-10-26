@@ -44,6 +44,20 @@
 
   const revealNodes = document.querySelectorAll("[data-reveal]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  document.querySelectorAll(".clip-frame video").forEach(function (clip) {
+    clip.controls = false;
+    clip.removeAttribute("controls");
+    if (reduceMotion) {
+      clip.pause();
+      clip.removeAttribute("autoplay");
+      return;
+    }
+    const play = clip.play();
+    if (play && typeof play.catch === "function") {
+      play.catch(function () {});
+    }
+  });
   if (!reduceMotion && "IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       function (entries) {
